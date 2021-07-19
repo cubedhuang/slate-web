@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Slate
 
-## Getting Started
+Slate is a simple but powerful bot that lets you watch YouTube Together, log ghost pings, play music, and dozens of more features!
 
-First, run the development server:
+### What are Discord Activities?
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Activities are a new in-development voice channel feature, including YouTube Together which allows everyone in a call to queue up videos and interact with them together!
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### How do I start a YouTube Together session?
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+After you’ve invited Slate to your server, simply use the `;activity` in a voice channel to start using Activities!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.tsx`.
+### Key Features
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- `;activity` and `;youtube` allow you to start certain Discord Activities sessions in voice channels.
+- `;logs` lets you turn on logging for ghost pings, potentially obscene statuses, nickname changes, and more!
+- `;play` and `;queue` let you play and see queued music in the background in voice channels and Spotify links and playlists work too!
+- `;userinfo` looks up information like past usernames and nicknames about people in your server.
+- `;lb` and `;rank` let you observe server activity with an XP system!
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+... use `;help` to try dozens more!
