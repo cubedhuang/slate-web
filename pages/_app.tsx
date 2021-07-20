@@ -1,7 +1,15 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
+
+import Footer from "../components/footer";
 import type { AppProps } from "next/app";
 
-function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
+function SlateWeb({ Component, pageProps }: AppProps) {
+	return (
+		<>
+			<Component {...pageProps} />
+			<Footer></Footer>
+		</>
+	);
 }
-export default MyApp;
+
+export default SlateWeb;

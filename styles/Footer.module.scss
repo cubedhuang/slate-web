@@ -1,0 +1,25 @@
+.footer {
+	width: 100%;
+	min-height: 5rem;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+	}
+
+	.logo {
+		height: 3em;
+		margin-left: 0.5rem;
+
+		img {
+			display: block;
+			height: 3em;
+		}
+	}
+}
