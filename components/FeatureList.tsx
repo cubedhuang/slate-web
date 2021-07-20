@@ -1,5 +1,5 @@
 import styles from "../styles/FeatureList.module.scss";
-import Feature from "./feature";
+import Feature from "./Feature";
 
 export default function FeatureList() {
 	return (

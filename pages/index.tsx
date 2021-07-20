@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Hero from "../components/hero";
-import FeatureList from "../components/featurelist";
+import FeatureList from "../components/FeatureList";
 
 export default function Home() {
 	return (
