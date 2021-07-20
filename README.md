@@ -1,6 +1,6 @@
 # Slate
 
-Slate is a simple but powerful bot that lets you watch YouTube Together, log ghost pings, play music, and dozens of more features!
+Slate is a simple yet powerful bot that lets you watch YouTube Together, log ghost pings, play music, and dozens of more features!
 
 ### What are Discord Activities?
 
