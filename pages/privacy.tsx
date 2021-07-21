@@ -55,7 +55,11 @@ export default function Privacy() {
 
 			<p>
 				See{" "}
-				<a href="https://discordlabs.org/privacy" target="_blank">
+				<a
+					href="https://discordlabs.org/privacy"
+					target="_blank"
+					rel="noreferrer"
+				>
 					Statcord&apos;s Privacy Policy.
 				</a>
 			</p>
