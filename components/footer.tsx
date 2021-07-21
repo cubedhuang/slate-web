@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import transparent from "../public/transparent.svg";
+
 export default function Footer() {
 	return (
 		<>
@@ -12,6 +14,7 @@ export default function Footer() {
 					bottom: 0;
 					width: 100%;
 					min-height: 5rem;
+					padding: 1rem 0;
 
 					display: flex;
 					justify-content: center;
@@ -28,28 +31,25 @@ export default function Footer() {
 
 						> * {
 							display: flex;
+						}
+
+						> :first-child {
 							align-items: center;
 						}
 
-						> :first-child a {
-							color: inherit;
-							text-decoration: none;
-						}
-
 						> :last-child {
+							flex: 1;
 							flex-direction: column;
 							text-align: right;
 							justify-content: stretch;
+							align-items: stretch;
 						}
 
 						.logo {
+							position: relative;
 							height: 3em;
+							aspect-ratio: 1;
 							margin-left: 0.5rem;
-
-							img {
-								display: block;
-								height: 3em;
-							}
 						}
 					}
 				}
@@ -60,17 +60,16 @@ export default function Footer() {
 					<div>
 						Made with &hearts; by Slate Development Team
 						<span className="logo">
-							<Image
-								src="/transparent.svg"
-								alt="Slate Logo"
-								width={48}
-								height={48}
-							/>
+							<Image src={transparent} alt="Slate Logo" layout="fill" />
 						</span>
 					</div>
 					<div>
-						<Link href="/">Home</Link>
-						<Link href="/privacy">Privacy Policy</Link>
+						<span>
+							<Link href="/">Home</Link>
+						</span>
+						<span>
+							<Link href="/privacy">Privacy Policy</Link>
+						</span>
 					</div>
 				</div>
 			</footer>

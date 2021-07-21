@@ -3,6 +3,14 @@ import Head from "next/head";
 export default function Privacy() {
 	return (
 		<>
+			<Head>
+				<title>Slate &ndash; Privacy Policy</title>
+				<meta name="description" content="Slate's privacy policy." />
+
+				<meta property="og:title" content="Slate – Privacy Policy" />
+				<meta property="og:description" content="Slate's privacy policy." />
+			</Head>
+
 			<style jsx>
 				{`
 					main {
@@ -29,11 +37,8 @@ export default function Privacy() {
 					}
 				`}
 			</style>
-			<main>
-				<Head>
-					<title>Slate &ndash; Privacy Policy</title>
-				</Head>
 
+			<main>
 				<h1>Privacy Policy</h1>
 
 				<p>

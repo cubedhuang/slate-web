@@ -3,8 +3,17 @@ export default function Hero() {
 		<>
 			<style jsx>{`
 				header {
-					min-height: 50vh;
-					padding: 2em 0;
+					--slant-height: 8vw;
+
+					min-height: calc(35vh + var(--slant-height));
+					padding: 3em 0 calc(3em + var(--slant-height) / 2) 0;
+					clip-path: polygon(
+						0 0,
+						100% 0,
+						100% calc(100% - var(--slant-height)),
+						0 100%
+					);
+					margin-bottom: 2rem;
 
 					display: flex;
 					gap: 1em;

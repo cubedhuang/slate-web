@@ -12,7 +12,10 @@ export default function Feature({ name, color, children }: FeatureProps) {
 					background: ${color};
 					padding: 1.5em;
 					border-radius: 1em;
-					transition: all 0.2s;
+
+					position: relative;
+					z-index: 1;
+					overflow: hidden;
 
 					flex: 1 1 30ch;
 
@@ -22,8 +25,21 @@ export default function Feature({ name, color, children }: FeatureProps) {
 						width: 100%;
 					}
 
-					&:hover {
-						background: ${color};
+					&::after {
+						content: "";
+						position: absolute;
+						inset: 0;
+						background-color: #0004;
+						z-index: -1;
+						// transition: transform 0.2s ease;
+						// transform-origin: left;
+						transition: opacity 0.2s ease;
+					}
+
+					&:hover::after {
+						// transform: scaleX(0);
+						// transform-origin: right;
+						opacity: 0;
 					}
 				}
 			`}</style>
