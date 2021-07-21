@@ -24,6 +24,8 @@ function SlateWeb({ Component, pageProps, router }: AppProps) {
 					--primary-500: #4063c1;
 					--primary-700: #5481ff;
 
+					--bg: #121212;
+
 					--container: min(100% - 4rem, 1140px);
 				}
 
@@ -45,11 +47,10 @@ function SlateWeb({ Component, pageProps, router }: AppProps) {
 						Oxygen, Ubuntu, Cantarell, "Open Sans", "Fira Sans", "Droid Sans",
 						"Helvetica Neue", sans-serif;
 					color: #fff;
-					background: #121212;
 					position: relative;
 					padding-bottom: 6rem;
 					min-height: 100vh;
-
+					background: var(--bg);
 					overflow-x: hidden;
 				}
 

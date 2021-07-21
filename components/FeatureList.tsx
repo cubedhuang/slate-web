@@ -21,6 +21,45 @@ export default function FeatureList() {
 						align-items: stretch;
 						gap: 1em;
 					}
+
+					.invite {
+						display: flex;
+						height: 100%;
+						flex-direction: column;
+
+						.link {
+							flex: 1;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+
+							a {
+								position: relative;
+								margin: 2em 0 0.5em 0;
+								padding: 1em;
+								z-index: 1;
+								overflow: hidden;
+
+								background: var(--primary-300);
+								border-radius: 0.5em;
+								text-decoration: none;
+								color: #fff;
+
+								&::after {
+									content: "";
+									position: absolute;
+									inset: 0;
+									background-color: #0003;
+									z-index: -1;
+									transition: opacity 0.2s ease;
+								}
+
+								&:hover::after {
+									opacity: 0;
+								}
+							}
+						}
+					}
 				}
 			`}</style>
 
@@ -58,9 +97,22 @@ export default function FeatureList() {
 						<code>;userinfo</code> that give you as much information as
 						possible, including username and nickname history!
 					</Feature>
-					<Feature name="&hellip;And More!" color="#2f3640" order={7}>
-						For a full list of features, invite Slate to your server and use the{" "}
-						<code>;help</code> command!
+					<Feature name="&hellip;And More!" color="#2f3640" order={7} noHover>
+						<div className="invite">
+							<div>
+								For a full list of features, invite Slate to your server and use
+								the <code>;help</code> command!
+							</div>
+							<span className="link">
+								<a
+									href={process.env.inviteLink}
+									target="_blank"
+									rel="noreferrer"
+								>
+									Add Slate!
+								</a>
+							</span>
+						</div>
 					</Feature>
 				</div>
 			</section>

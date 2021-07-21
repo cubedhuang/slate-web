@@ -2,6 +2,7 @@ interface FeatureProps {
 	name: string;
 	color: string;
 	order: number;
+	noHover?: boolean;
 	children: any;
 }
 
@@ -9,6 +10,7 @@ export default function Feature({
 	name,
 	color,
 	order,
+	noHover,
 	children
 }: FeatureProps) {
 	return (
@@ -25,6 +27,10 @@ export default function Feature({
 
 					flex: 1 1 30ch;
 
+					display: flex;
+					flex-direction: column;
+					gap: 0.3em;
+
 					animation-name: enter;
 					animation-duration: 1s;
 					animation-fill-mode: both;
@@ -32,8 +38,11 @@ export default function Feature({
 
 					h3 {
 						font-size: 1.6rem;
-						margin-bottom: 0.25em;
 						width: 100%;
+					}
+
+					p {
+						flex: 1;
 					}
 
 					&::after {
@@ -46,7 +55,7 @@ export default function Feature({
 					}
 
 					&:hover::after {
-						opacity: 0;
+						opacity: ${noHover ? 1 : 0};
 					}
 				}
 
