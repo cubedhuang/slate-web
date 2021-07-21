@@ -1,10 +1,16 @@
 interface FeatureProps {
 	name: string;
 	color: string;
-	children?: any;
+	order: number;
+	children: any;
 }
 
-export default function Feature({ name, color, children }: FeatureProps) {
+export default function Feature({
+	name,
+	color,
+	order,
+	children
+}: FeatureProps) {
 	return (
 		<>
 			<style jsx>{`
@@ -19,6 +25,11 @@ export default function Feature({ name, color, children }: FeatureProps) {
 
 					flex: 1 1 30ch;
 
+					animation-name: enter;
+					animation-duration: 1s;
+					animation-fill-mode: both;
+					animation-delay: ${order * 100}ms;
+
 					h3 {
 						font-size: 1.6rem;
 						margin-bottom: 0.25em;
@@ -29,17 +40,25 @@ export default function Feature({ name, color, children }: FeatureProps) {
 						content: "";
 						position: absolute;
 						inset: 0;
-						background-color: #0004;
+						background-color: #0003;
 						z-index: -1;
-						// transition: transform 0.2s ease;
-						// transform-origin: left;
 						transition: opacity 0.2s ease;
 					}
 
 					&:hover::after {
-						// transform: scaleX(0);
-						// transform-origin: right;
 						opacity: 0;
+					}
+				}
+
+				@keyframes enter {
+					from {
+						opacity: 0;
+						transform: translateY(1em);
+					}
+
+					to {
+						opacity: 1;
+						transform: translateY(0);
 					}
 				}
 			`}</style>
