@@ -20,7 +20,9 @@ export default function Home() {
 
 			<Hero />
 
-			<FeatureList />
+			<main>
+				<FeatureList />
+			</main>
 		</>
 	);
 }
