@@ -33,9 +33,9 @@ export default function FeatureList() {
 					looping, volume controls, loading Spotify playlists, and more!
 				</Feature>
 				<Feature name="Leveling System" color="#192a56">
-					As people talk, they'll gain experience. Use the <code>;lb</code> and{" "}
-					<code>;rank</code> commands to measure how active people are compared
-					to each other in your servers!
+					As people talk, they&apos;ll gain experience. Use the <code>;lb</code>{" "}
+					and <code>;rank</code> commands to measure how active people are
+					compared to each other in your servers!
 				</Feature>
 				<Feature name="Complex Math" color="#438a20">
 					Use the our powerful <code>;math</code> command to evaluate complex
