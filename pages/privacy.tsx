@@ -60,8 +60,9 @@ export default function Privacy() {
 					target="_blank"
 					rel="noreferrer"
 				>
-					Statcord&apos;s Privacy Policy.
+					Statcord&apos;s Privacy Policy
 				</a>
+				.
 			</p>
 
 			<h2>Deleting Data</h2>
@@ -75,8 +76,15 @@ export default function Privacy() {
 			<h2>Questions and Concerns</h2>
 
 			<p>
-				If you have questions and/or concerns about the data stored, [join our
-				support server](https://discord.gg/H4bndawejj).
+				If you have questions and/or concerns about the data stored,{" "}
+				<a
+					href="https://discord.gg/H4bndawejj"
+					target="_blank"
+					rel="noreferrer"
+				>
+					join our support server
+				</a>
+				.
 			</p>
 
 			<p>This policy was last updated July 20th, 2021.</p>
