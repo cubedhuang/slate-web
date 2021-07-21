@@ -12,22 +12,22 @@ export default function Privacy() {
 
 			<p>
 				All of the following applies to information collected with the Discord
-				application "Slate#4283" (785196430796914758) through the Discord bot
-				gateway.
+				application &quot;Slate#4283&quot; (785196430796914758) through the
+				Discord bot gateway.
 			</p>
 
 			<h2>What information do we store and why?</h2>
 
 			<p>
-				We store our users' IDs for all of the following information. All of
-				this information can be accessed by people sharing a mutual server with
-				Slate.
+				We store our users&apos; IDs for all of the following information. All
+				of this information can be accessed by people sharing a mutual server
+				with Slate.
 			</p>
 
 			<ol>
 				<li>
 					We store user IDs and the number of times the commands have been run
-					for the "fun" commands like <code>;count</code> and{" "}
+					for the &quot;fun&quot; commands like <code>;count</code> and{" "}
 					<code>;multiply</code>.
 				</li>
 				<li>
@@ -56,7 +56,7 @@ export default function Privacy() {
 			<p>
 				See{" "}
 				<a href="https://discordlabs.org/privacy" target="_blank">
-					Statcord's Privacy Policy.
+					Statcord&apos;s Privacy Policy.
 				</a>
 			</p>
 
