@@ -76,6 +76,10 @@ export default function Privacy() {
 						limited to custom prefixes, disabled channels, logging channels, and
 						logging toggles.
 					</li>
+					<li>
+						We observe (but don't store) presence changes in order to facilitate
+						logs for possibly obscene statuses.
+					</li>
 				</ol>
 
 				<h2>Third Party Data Sharing</h2>

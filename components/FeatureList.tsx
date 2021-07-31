@@ -87,8 +87,8 @@ export default function FeatureList() {
 						active people are compared to each other in your servers!
 					</Feature>
 					<Feature name="Complex Math" color="#438a20" order={5}>
-						Use the our powerful <code>;math</code> command to evaluate complex
-						math expressions, equations, and systems. Factoring quadratics? Just{" "}
+						Use our powerful <code>;math</code> command to evaluate complex math
+						expressions, equations, and systems. Factoring quadratics? Just{" "}
 						<code>;math factor x^2-4</code>! Integrating functions? Use{" "}
 						<code>;math integrate 2x</code>!
 					</Feature>
