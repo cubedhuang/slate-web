@@ -90,10 +90,10 @@ export default function Privacy() {
 				<h3>What about logging?</h3>
 
 				<p>
-					We observe, scan, but <u>don&apos;t store</u> any
-					information that Slate logs regarding messages, presence
-					changes, or nickname changes. Additionally, all logging is
-					opt-in, and Slate does process anything unless it is
+					We observe, scan, but <u>do not store</u> any information
+					that Slate logs regarding messages, presence changes, or
+					nickname changes. Additionally, all logging is opt-in for
+					server admins, so Slate does process anything unless it is
 					configured to do so.
 				</p>
 
