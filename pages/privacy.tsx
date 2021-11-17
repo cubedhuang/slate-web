@@ -90,9 +90,9 @@ export default function Privacy() {
 				<h3>What about logging?</h3>
 
 				<p>
-					We observe, scan, but <u>don't store</u> any information
-					that Slate logs regarding messages, presence changes, or
-					nickname changes.
+					We observe, scan, but <u>don&apos;t store</u> any
+					information that Slate logs regarding messages, presence
+					changes, or nickname changes.
 				</p>
 
 				<h2>Third Party Data Sharing</h2>
